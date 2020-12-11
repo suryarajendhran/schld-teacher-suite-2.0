@@ -43,7 +43,7 @@
       <v-spacer></v-spacer>
       <v-btn class="mr-2" icon><v-icon>mdi-bell</v-icon></v-btn>
       <v-btn class="mr-2" text>Go to docs</v-btn>
-      <v-btn class="ml-2" outlined icon><v-icon>mdi-account</v-icon></v-btn>
+      <v-btn class="ml-2" icon><v-icon>mdi-account</v-icon></v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
