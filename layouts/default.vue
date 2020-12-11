@@ -1,5 +1,16 @@
 <template>
   <v-app>
+    <v-app-bar elevate-on-scroll app>
+      <v-app-bar-nav-icon
+        v-if="is_mobile"
+        @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+      <v-btn class="mr-1" icon><v-icon>mdi-bell</v-icon></v-btn>
+      <v-btn class="mr-1" text>Go to docs</v-btn>
+      <v-btn class="ml-1" icon><v-icon>mdi-account</v-icon></v-btn>
+    </v-app-bar>
+
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant.sync="mini"
@@ -39,16 +50,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar elevate-on-scroll app>
-      <v-app-bar-nav-icon
-        v-if="is_mobile"
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
-      <v-spacer></v-spacer>
-      <v-btn class="mr-1" icon><v-icon>mdi-bell</v-icon></v-btn>
-      <v-btn class="mr-1" text>Go to docs</v-btn>
-      <v-btn class="ml-1" icon><v-icon>mdi-account</v-icon></v-btn>
-    </v-app-bar>
+
     <v-main>
       <v-container>
         <nuxt />
