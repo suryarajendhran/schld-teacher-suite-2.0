@@ -20,7 +20,7 @@
       <v-list-item style="height: 64px" class="px-2">
         <v-list-item-avatar>
           <!-- TODO: Change to our logo -->
-          <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
+          <v-img src="Logo.webp"></v-img>
         </v-list-item-avatar>
 
         <v-list-item-title>Scholared</v-list-item-title>
