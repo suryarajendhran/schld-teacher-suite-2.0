@@ -14,7 +14,7 @@
 
         <v-list-item-title>Scholared</v-list-item-title>
 
-        <v-btn icon @click.stop="mini = !mini">
+        <v-btn v-if="!is_mobile" icon @click.stop="mini = !mini">
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
       </v-list-item>
@@ -40,7 +40,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar elevate-on-scroll app>
-      <v-app-bar-nav-icon v-if="is_mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        v-if="is_mobile"
+        @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <v-btn class="mr-1" icon><v-icon>mdi-bell</v-icon></v-btn>
       <v-btn class="mr-1" text>Go to docs</v-btn>
