@@ -62,13 +62,28 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Dashboard',
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          icon: 'mdi-face',
+          title: 'Students',
+          to: '/student',
+        },
+        {
+          icon: 'mdi-newspaper-variant',
+          title: 'Concepts',
+          to: '/concepts',
+        },
+        {
+          icon: 'mdi-chart-areaspline',
+          title: 'Analytics',
+          to: '/results',
+        },
+        {
+          icon: 'mdi-atom',
+          title: 'Question Papers',
+          to: '/qpapers',
         },
       ],
       title: 'Vuetify.js',
