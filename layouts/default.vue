@@ -6,7 +6,7 @@
       permanent
       app
     >
-      <v-list-item class="px-2">
+      <v-list-item style="height: 64px" class="px-2">
         <v-list-item-avatar>
           <!-- TODO: Change to our logo -->
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
@@ -39,7 +39,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="white" elevate-on-scroll flat app>
+    <v-app-bar elevate-on-scroll app>
       <v-spacer></v-spacer>
       <v-btn class="mr-2" icon><v-icon>mdi-bell</v-icon></v-btn>
       <v-btn class="mr-2" text>Go to docs</v-btn>
@@ -56,9 +56,13 @@
 <script>
 export default {
   data() {
+    var mini = false
+    if (window.innerHeight < 800 || window.innerWidth < 400) {
+      mini = true
+    }
     return {
       drawer: false,
-      mini: false,
+      mini,
       items: [
         {
           icon: 'mdi-apps',
