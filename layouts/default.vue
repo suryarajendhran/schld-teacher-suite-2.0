@@ -8,10 +8,11 @@
     >
       <v-list-item class="px-2">
         <v-list-item-avatar>
+          <!-- TODO: Change to our logo -->
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-title>John Leider</v-list-item-title>
+        <v-list-item-title>Scholared</v-list-item-title>
 
         <v-btn icon @click.stop="mini = !mini">
           <v-icon>mdi-chevron-left</v-icon>
@@ -38,6 +39,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <v-app-bar color="white" elevate-on-scroll flat app>
+      <v-spacer></v-spacer>
+      <v-btn class="mr-2" icon><v-icon>mdi-bell</v-icon></v-btn>
+      <v-btn class="mr-2" text>Go to docs</v-btn>
+      <v-btn class="ml-2" outlined icon><v-icon>mdi-account</v-icon></v-btn>
+    </v-app-bar>
     <v-main>
       <v-container>
         <nuxt />
@@ -51,7 +58,7 @@ export default {
   data() {
     return {
       drawer: false,
-      mini: true,
+      mini: false,
       items: [
         {
           icon: 'mdi-apps',
