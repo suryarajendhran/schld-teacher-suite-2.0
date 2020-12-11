@@ -77,7 +77,7 @@ export default {
         {
           icon: 'mdi-face',
           title: 'Students',
-          to: '/student',
+          to: '/students',
         },
         {
           icon: 'mdi-newspaper-variant',
@@ -87,15 +87,14 @@ export default {
         {
           icon: 'mdi-chart-areaspline',
           title: 'Analytics',
-          to: '/results',
+          to: '/analytics',
         },
         {
           icon: 'mdi-atom',
-          title: 'Question Papers',
-          to: '/qpapers',
+          title: 'Generate Test',
+          to: '/generate-test',
         },
       ],
-      title: 'Vuetify.js',
     }
   },
 }
