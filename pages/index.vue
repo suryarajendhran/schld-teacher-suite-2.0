@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-col>
     <v-row justify="space-between">
       <v-card class="mt-2" v-for="room in classes" :key="room.cid" width="380">
         <v-card-title primary-title cl>
@@ -24,7 +24,7 @@
     <div>
       <v-card
         class="mt-4 pb-2 mx-auto"
-        elevation="8"
+        elevation="2"
         max-width="calc(100%-32px)"
       >
         <v-sparkline
@@ -41,7 +41,7 @@
         </v-sparkline>
       </v-card>
     </div>
-  </div>
+  </v-col>
 </template>
 
 <script>
