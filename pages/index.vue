@@ -23,7 +23,7 @@
     </v-row>
     <div>
       <v-card
-        class="mt-4 pb-2 mx-auto"
+        class="mt-6 pb-2 mx-auto"
         elevation="2"
         max-width="calc(100%-32px)"
       >
