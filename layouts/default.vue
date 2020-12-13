@@ -51,7 +51,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="grey lighten-5">
       <v-container>
         <nuxt />
       </v-container>
@@ -63,7 +63,7 @@
 export default {
   data() {
     var is_mobile = false
-    if (window.innerHeight < 800 || window.innerWidth < 400) {
+    if (window.innerWidth < 400) {
       is_mobile = true
     }
     return {
