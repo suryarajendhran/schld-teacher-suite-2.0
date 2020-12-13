@@ -14,7 +14,9 @@
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn dark color="black" @click="openStudentDialog(room)">students</v-btn>
+          <v-btn dark color="black" @click="openStudentDialog(room)"
+            >students</v-btn
+          >
           <v-btn color="orange">Confidence</v-btn>
           <v-btn color="yellow">Activity</v-btn>
           <v-spacer></v-spacer>
@@ -42,7 +44,11 @@
       </v-card>
 
       <!-- Student Dialog Start -->
-      <StudentDialog :dialog="studentDialog" :room="studentDialogOpenClass" @close="studentDialog = false" />
+      <StudentDialog
+        :dialog="studentDialog"
+        :room="studentDialogOpenClass"
+        @close="studentDialog = false"
+      />
       <!-- Student Dialog End -->
     </div>
   </v-col>
@@ -95,14 +101,14 @@ export default {
         { label: '17th', questions: '117' },
       ],
       studentDialog: false,
-      studentDialogOpenClass : null,
+      studentDialogOpenClass: null,
     }
   },
-  methods:{
-    openStudentDialog(room){
-      this.studentDialog = true;
-      this.studentDialogOpenClass= room;
-    }
+  methods: {
+    openStudentDialog(room) {
+      this.studentDialog = true
+      this.studentDialogOpenClass = room
+    },
   },
   computed: {
     labels() {
