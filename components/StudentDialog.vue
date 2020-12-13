@@ -14,7 +14,7 @@
         <v-spacer></v-spacer>
       </v-toolbar>
       <v-banner elevation="0.5">
-        <h2 is-center>{{ room.grade }} - {{ room.section }} {{room.subject}}</h2>
+        <h2 is-center>{{ classroom.grade }} - {{ classroom.section }} {{classroom.subject}}</h2>
       </v-banner>
       <v-data-table
       :headers="headers"
@@ -70,6 +70,20 @@ export default {
       ],
     }
   },
+  computed:{
+    classroom(){
+      if(this.room === false){
+        return {
+          grade: '',
+          section: '',
+          subject:'',
+        }
+      }
+      else{
+        return this.room;
+      }
+    }
+  }
 }
 </script>
 

@@ -95,7 +95,7 @@ export default {
         { label: '17th', questions: '117' },
       ],
       studentDialog: false,
-      studentDialogOpenClass : null,
+      studentDialogOpenClass : false,
     }
   },
   methods:{
